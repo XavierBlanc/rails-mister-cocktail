@@ -1,0 +1,37 @@
+<div id="map"></div>
+
+<div class="container text-center">
+  <h1>Welcome to Xav's cocktails</h1>
+<br>
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <% if cocktail.photos.size != 0 %>
+        <% picture_url = cl_image_path cocktail.photos[0].path %>
+      <% else %>
+        <% picture_url = (@pics[rand(@pics.size)]) %>
+      <% end %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://static.cuisineaz.com/680x357/i130849-.jpeg %>');">
+          <div class="card-description">
+            <h2><%= cocktail.name %></h2>
+          </div>
+          <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://static.cuisineaz.com/680x357/i130849-.jpeg);">
+  <div class="container">
+    <h1>Xav's cocktail</h1>
+    <h2>Welcome to the cocktail place</H2>
+    <p>Choose your ingredient, we'll make the cocktail.</p>
+    <a class="btn btn-flat" href="#">choose ingredients</a>
+  </div>
+</div>
+
+
+

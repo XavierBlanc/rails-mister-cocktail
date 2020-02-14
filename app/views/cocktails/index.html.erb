@@ -1,37 +1,72 @@
-<div id="map"></div>
-
-<div class="container text-center">
-  <h1>Welcome to Xav's cocktails</h1>
-<br>
-  <div class="row">
-    <% @cocktails.each do |cocktail| %>
-      <% if cocktail.photos.size != 0 %>
-        <% picture_url = cl_image_path cocktail.photos[0].path %>
-      <% else %>
-        <% picture_url = (@pics[rand(@pics.size)]) %>
-      <% end %>
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://static.cuisineaz.com/680x357/i130849-.jpeg %>');">
-          <div class="card-description">
-            <h2><%= cocktail.name %></h2>
-          </div>
-          <%= link_to "", cocktail_path(cocktail), class: "card-link" %>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</div>
-
-
-
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://static.cuisineaz.com/680x357/i130849-.jpeg);">
   <div class="container">
     <h1>Xav's cocktail</h1>
     <h2>Welcome to the cocktail place</H2>
-    <p>Choose your ingredient, we'll make the cocktail.</p>
-    <a class="btn btn-flat" href="#">choose ingredients</a>
+    <p>Choose bellow the cocktail you want to have 👇🏽</p>
+    <a class="btn btn-ghost" href="#">Make your own cocktail</a>
   </div>
 </div>
+<div class="Cocktail text-center ">
+<h1> Our Cocktails 🍸👇🏽 </h1>
+</div>
 
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://lesucre-prod.s3.amazonaws.com/uploads/post/bigvisual/1539/b8dc75b4-e1e5-496c-805e-45f66f4a00c4.jpg)">
+  Mojito
+  <a class="btn btn-hide" href="#"> Mojito</a>
+</div>
+<div class="card-category1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://assets.punchdrink.com/wp-content/uploads/2017/10/Article-Best-Whiskey-Sour-Cocktail-Recipe-1.jpg)">
+  Wiskey sour
+</div>
 
+<div class="card-category2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F3908bd9a-12c5-4262-97ac-dbbb4094e4c0.2Ejpeg/748x372/quality/80/crop-from/center/gin-tonic.jpeg)">
+  Gin Tonic
+</div>
 
+<div class="card-category3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://static1.villaschweppes.com/articles/7/18/27/@/350738-le-cocktail-spritz-opengraph_1200-2.jpeg)">
+  Spritz
+</div>
+
+<div class="card-category4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://files2.hungryforever.com/wp-content/uploads/2017/08/03175440/hanky-panky-whislers-austin-crdt-justin-stidham.jpg
+)">
+  Hanky Panky
+</div>
+
+<div class="Cocktail-ingredient text-center ">
+<h1> Our ingredients 🍊🥒🥕👇🏽</h1>
+</div>
+
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.shopify.com/s/files/1/0246/5179/2465/products/HER-MT12_600x.jpg?v=1577121854)">
+    Mint
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://st2.depositphotos.com/1000504/6425/i/950/depositphotos_64253211-stock-photo-ginger-pieces-macro.jpg)">
+    Ginger
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://previews.123rf.com/images/nipapornnan/nipapornnan1509/nipapornnan150900006/44578715-fresh-cucumber-slices-background.jpg)">
+    Cucumber
+  </div>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.unepommeparjour.com/wp-content/uploads/2017/07/orange.jpg)">
+    Orange
+  </div>
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tootopoids.com/wp-content/uploads/2018/05/Sucre-Panela-chez-Tootopoids-_resultat.jpg)">
+    Cane sugar
+  </div>
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://data2.1freewallpapers.com/download/carrots-ripe-grass.jpg)">
+    Carrot
+  </div>
+
+  <div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    Follow us
+  </div>
+  </div>
+</div>

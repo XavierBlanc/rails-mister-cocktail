@@ -14,32 +14,46 @@
      <a class= "btn btn-ghost" href="#alcohol" >Choose an alcohol</a>
      </div>
 
-
-
   </div>
 </div>
 <div class="Cocktail text-center" id="My_cocktails">
 <h1> Our Cocktails 🍸👇🏽 </h1>
 </div>
 
+<div class="margin_bottom">
+
 <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://lesucre-prod.s3.amazonaws.com/uploads/post/bigvisual/1539/b8dc75b4-e1e5-496c-805e-45f66f4a00c4.jpg)">
   Mojito
 </div>
+
 <div class="card-category1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://assets.punchdrink.com/wp-content/uploads/2017/10/Article-Best-Whiskey-Sour-Cocktail-Recipe-1.jpg)">
   Wiskey sour
 </div>
 
-<div class="card-category2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F3908bd9a-12c5-4262-97ac-dbbb4094e4c0.2Ejpeg/748x372/quality/80/crop-from/center/gin-tonic.jpeg)">
+<div class="card-category1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F3908bd9a-12c5-4262-97ac-dbbb4094e4c0.2Ejpeg/748x372/quality/80/crop-from/center/gin-tonic.jpeg)">
   Gin Tonic
 </div>
 
-<div class="card-category3" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://static1.villaschweppes.com/articles/7/18/27/@/350738-le-cocktail-spritz-opengraph_1200-2.jpeg)">
+<div class="card-category1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://static1.villaschweppes.com/articles/7/18/27/@/350738-le-cocktail-spritz-opengraph_1200-2.jpeg)">
   Spritz
 </div>
 
-<div class="card-category4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://files2.hungryforever.com/wp-content/uploads/2017/08/03175440/hanky-panky-whislers-austin-crdt-justin-stidham.jpg
+<div class="card-category1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://files2.hungryforever.com/wp-content/uploads/2017/08/03175440/hanky-panky-whislers-austin-crdt-justin-stidham.jpg
 )">
   Hanky Panky
+</div>
+
+<% @cocktails.each do |cocktail|%>
+<div class="card-category1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://files2.hungryforever.com/wp-content/uploads/2017/08/03175440/hanky-panky-whislers-austin-crdt-justin-stidham.jpg
+)">
+  <%= cocktail.name %>
+
+  <div class="delete_btn">
+  <%=link_to "X", cocktail_path(cocktail), method: :delete %>
+  </div>
+</div>
+
+<% end %>
 </div>
 
 <div class="Cocktail-ingredient text-center" id="ingredient">

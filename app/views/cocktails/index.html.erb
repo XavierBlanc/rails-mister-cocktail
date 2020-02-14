@@ -3,16 +3,27 @@
     <h1>Xav's cocktail</h1>
     <h2>Welcome to the cocktail place</H2>
     <p>Choose bellow the cocktail you want to have 👇🏽</p>
-    <a class="btn btn-ghost" href="#">Make your own cocktail</a>
+     <%= link_to "Add a cocktail +", new_cocktail_path, class: "btn btn-ghost" %>
+     <div>
+     <a class= "btn btn-ghost" href="#ingredient" >Make your own cocktail</a>
+     </div>
+     <div>
+     <a class= "btn btn-ghost" href="#My_cocktails" >Choose a cocktail</a>
+     </div>
+      <div>
+     <a class= "btn btn-ghost" href="#alcohol" >Choose an alcohol</a>
+     </div>
+
+
+
   </div>
 </div>
-<div class="Cocktail text-center ">
+<div class="Cocktail text-center" id="My_cocktails">
 <h1> Our Cocktails 🍸👇🏽 </h1>
 </div>
 
 <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://lesucre-prod.s3.amazonaws.com/uploads/post/bigvisual/1539/b8dc75b4-e1e5-496c-805e-45f66f4a00c4.jpg)">
   Mojito
-  <a class="btn btn-hide" href="#"> Mojito</a>
 </div>
 <div class="card-category1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://assets.punchdrink.com/wp-content/uploads/2017/10/Article-Best-Whiskey-Sour-Cocktail-Recipe-1.jpg)">
   Wiskey sour
@@ -31,7 +42,7 @@
   Hanky Panky
 </div>
 
-<div class="Cocktail-ingredient text-center ">
+<div class="Cocktail-ingredient text-center" id="ingredient">
 <h1> Our ingredients 🍊🥒🥕👇🏽</h1>
 </div>
 
@@ -47,15 +58,88 @@
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://previews.123rf.com/images/nipapornnan/nipapornnan1509/nipapornnan150900006/44578715-fresh-cucumber-slices-background.jpg)">
     Cucumber
   </div>
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.unepommeparjour.com/wp-content/uploads/2017/07/orange.jpg)">
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://previews.123rf.com/images/retouchman/retouchman1805/retouchman180500412/101982043-orange-fruit-orange-slices-half-orange-whole-orange-background.jpg)">
     Orange
   </div>
-<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tootopoids.com/wp-content/uploads/2018/05/Sucre-Panela-chez-Tootopoids-_resultat.jpg)">
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://tootopoids.com/wp-content/uploads/2018/05/Sucre-Panela-chez-Tootopoids-_resultat.jpg)">
     Cane sugar
   </div>
+
 <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://data2.1freewallpapers.com/download/carrots-ripe-grass.jpg)">
     Carrot
   </div>
+
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://previews.123rf.com/images/atoss/atoss1505/atoss150500330/40103906-ananas-avec-des-tranches-isol%C3%A9.jpg)">
+    Pineapple
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://upload.wikimedia.org/wikipedia/commons/e/ee/Mango_and_cross_section_edit.jpg)">
+    Mango
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.fineartamerica.com/images-medium-large/lemon-slice-stack-2-a-john-brueske.jpg)">
+    Lemon
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://media.ruralradio.co/wordpress/2019/08/All-About-Bananas-Nutrition-Facts-Health-Benefits-Recipes-and-More-RM-722x406.jpg)">
+    Banana
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/09/watermelon-fruit-sliced-1296x728-header-1296x728.jpg?w=1155&h=1528)">
+    Watermelon
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://s3.amazonaws.com/yummy_uploads2/blog/6398.jpg)">
+    Apple
+  </div>
+  </div>
+
+  <div class="Cocktail-alcohol text-center" id="alcohol">
+<h1> Alcohols </h1>
+</div>
+
+<div class="cards">
+
+ <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://products0.imgix.drizly.com/ci-bombay-sapphire-4967085f606d9efa.jpeg?auto=format%2Ccompress&fm=jpeg&q=20)">
+    Gin
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.liquor.com/wp-content/uploads/2016/09/15074045/Rum-1200-628-social.jpg)">
+    Rhum
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.liquor.com/wp-content/uploads/2016/09/15074029/IrishWhiskey-1200-628-social.jpg)">
+    Whiskey
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cdn.webshopapp.com/shops/7950/files/275355277/800x1024x2/absolut-absolut-vodka-blue-175l-400-alcohol.jpg)">
+    Vodka
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://d3r6kbofdnmd8.cloudfront.net/media/catalog/product/cache/image/1536x/a4e40ebdc3e371adff845072e1c73f37/1/0/101988_campari-bitter_700.jpg)">
+    Campari
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.gustoditalia.com/Files/24462/Img/08/amaro-Montenegro-gustoditalia-1litre-big.jpg)">
+    Amaro
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.moncopaincaviste.com/Spiritueux/Cognac-XO-Delaitre-40-70-cl-0378CC8C8.jpg)">
+    Cognac
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i.pinimg.com/originals/94/83/d1/9483d11c1f105e10f6283af03657d33c.png)">
+    Armagnac
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.whisky.fr/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/4/m4112_2.jpg)">
+    Absinthe
+  </div>
+
+  </div>
+
 
   <div class="footer">
   <div class="footer-links">
@@ -69,4 +153,4 @@
     Follow us
   </div>
   </div>
-</div>
+
